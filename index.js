@@ -8,6 +8,4 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
- .get('/mips', (req, res) => res.render('pages/mips'))
- 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
